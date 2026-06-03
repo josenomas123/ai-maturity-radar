@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+st_out.txt
+st_err.txt
