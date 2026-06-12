@@ -31,59 +31,74 @@ st.set_page_config(
 # ── Datos: pilares y preguntas ────────────────────────────────────────────────
 
 PILLARS = {
-    "🏢 Impacto Negocio": {
-        "short": "Impacto Negocio",
+    "🧭 Estrategia y Liderazgo": {
+        "short": "Estrategia",
         "color": "#FF6B6B",
-        "description": "Evaluación del valor de negocio generado por iniciativas de IA",
+        "description": "¿La IA está en la agenda de dirección o en el cajón?",
         "questions": [
-            "¿Su organización ha identificado casos de uso de IA alineados con los objetivos estratégicos?",
-            "¿Existe un mecanismo formal para medir el ROI de las iniciativas de IA?",
-            "¿La dirección ejecutiva apoya activamente y patrocina los proyectos de IA?",
-            "¿Ha implementado soluciones de IA que hayan generado valor de negocio tangible y medible?",
+            "La dirección tiene una visión IA documentada y ambiciosa a 12–24 meses.",
+            "Existe un sponsor ejecutivo con mandato formal y presupuesto asignado a IA.",
+            "Los KPIs de IA están conectados a objetivos de negocio y al P&L de la empresa.",
+            "La IA se discute regularmente en los comités de dirección (al menos mensual).",
+            "Existe un roadmap IA formal con hitos, fechas y responsables identificados.",
+            "La inversión anual en IA supera el 2% de la facturación de la empresa.",
+            "La estrategia IA se revisa y actualiza al menos una vez al año con métricas objetivas.",
         ],
     },
-    "⚙️ Tecnología": {
-        "short": "Tecnología",
+    "🗄️ Datos y Tecnología": {
+        "short": "Datos y Tech",
         "color": "#4ECDC4",
-        "description": "Capacidad tecnológica para desarrollar y desplegar soluciones de IA",
+        "description": "¿Tus datos son un activo o un problema oculto?",
         "questions": [
-            "¿Su infraestructura tecnológica puede soportar el despliegue de modelos de IA a escala?",
-            "¿Tiene capacidades de MLOps para gestionar el ciclo de vida completo de los modelos?",
-            "¿Su organización utiliza herramientas de IA/ML modernas y actualizadas?",
-            "¿Existe integración efectiva entre los sistemas de IA y las aplicaciones de negocio existentes?",
+            "Los datos de cliente, venta y operaciones están centralizados y son accesibles.",
+            "La arquitectura tecnológica (cloud, APIs) está preparada para integrar IA.",
+            "Los sistemas clave (CRM, ERP, canales) están integrados entre sí.",
+            "Existe una única fuente de verdad para los datos críticos del negocio.",
+            "La calidad de los datos se mide y monitoriza de forma continua.",
+            "Tenemos herramientas de analítica avanzada o BI en uso regular por el equipo.",
+            "Podemos acceder a los datos de cliente y venta clave en menos de un día hábil.",
         ],
     },
-    "🗄️ Data Management": {
-        "short": "Data Management",
+    "🙌 Personas y Cultura": {
+        "short": "Personas",
         "color": "#45B7D1",
-        "description": "Gestión, calidad y accesibilidad de los datos para proyectos de IA",
+        "description": "¿Tu equipo empuja la IA o la IA empuja a tu equipo?",
         "questions": [
-            "¿Sus datos están bien organizados, etiquetados y son accesibles para proyectos de IA?",
-            "¿Cuenta con procesos establecidos de calidad y limpieza de datos?",
-            "¿Tiene pipelines de datos automatizados para alimentar modelos de IA?",
-            "¿Sus datos cumplen con los estándares de privacidad y seguridad requeridos?",
+            "Existe un programa continuo de formación en IA para el equipo (no puntual).",
+            "Más del 30% del equipo utiliza IA en su trabajo diario de forma productiva.",
+            "La cultura valora la experimentación y el aprendizaje rápido con nuevas herramientas.",
+            "Hay embajadores IA o referentes internos en las áreas clave del negocio.",
+            "Los casos de éxito con IA se comunican y celebran internamente.",
+            "El equipo no tiene miedo a ser reemplazado por IA, lo ve como palanca personal.",
+            "Los procesos de contratación incorporan ya skills de IA como competencia valorada.",
         ],
     },
-    "⚖️ Gobierno": {
-        "short": "Gobierno",
+    "⚙️ Procesos y Casos de Uso": {
+        "short": "Procesos",
         "color": "#96CEB4",
-        "description": "Marco de gobernanza, ética y cumplimiento regulatorio en IA",
+        "description": "¿Eliges casos por moda o por valor cuantificable?",
         "questions": [
-            "¿Tiene políticas claras de gobernanza para el uso responsable de la IA?",
-            "¿Existe un marco de gestión de riesgos específico para proyectos de IA?",
-            "¿Sus modelos de IA son auditables, transparentes y explicables?",
-            "¿Cumple con las regulaciones de IA aplicables en su sector o industria?",
+            "Tenemos un portfolio de casos de uso priorizados por impacto y esfuerzo.",
+            "Al menos un caso de uso de IA está en producción con ROI medido y documentado.",
+            "Cada caso de uso tiene KPIs claros, owner asignado y sistema de medición.",
+            "Los pilotos que funcionan se escalan a producción con un proceso definido.",
+            "Existen mecanismos para capturar feedback de los usuarios de las herramientas IA.",
+            "Se comparten aprendizajes entre pilotos (lo que funcionó y lo que no).",
+            "La IA ya está integrada en al menos uno de los procesos core del negocio.",
         ],
     },
-    "🎓 Skills": {
-        "short": "Skills",
+    "⚖️ Gobernanza y Ética": {
+        "short": "Gobernanza",
         "color": "#FFEAA7",
-        "description": "Capacidades humanas, talento y cultura de adopción de IA",
+        "description": "¿Estás construyendo sobre terreno firme o sobre arena?",
         "questions": [
-            "¿Su equipo cuenta con habilidades técnicas (ML, data science, ingeniería de datos)?",
-            "¿Existe un programa de capacitación continua en IA para su personal?",
-            "¿Tiene acceso a talento especializado en IA cuando lo necesita (interno o externo)?",
-            "¿La cultura organizacional fomenta activamente la experimentación y adopción de IA?",
+            "Tenemos una política de uso responsable de IA publicada internamente y firmada.",
+            "Cumplimos con RGPD, AI Act y requisitos sectoriales aplicables a IA.",
+            "Existen controles de acceso y trazabilidad a los datos que usan los modelos IA.",
+            "Hay un responsable formal de IA y datos (puede coincidir con el DPO).",
+            "Los empleados saben qué tipos de datos NO pueden subir a IAs públicas.",
+            "Las licencias corporativas de IA tienen cláusulas de no-training con nuestros datos.",
+            "Los modelos en producción están documentados en un registro accesible y auditable.",
         ],
     },
 }
@@ -205,8 +220,8 @@ def action_plan_basic(scores: list[float]) -> str:
 """
 
 
-def action_plan_openai(scores: list[float], api_key: str) -> str:
-    """Plan de acción generado por GPT-4o-mini vía OpenAI API."""
+def action_plan_openai(scores: list[float], api_key: str, profile: dict) -> str:
+    """Plan de acción personalizado generado por GPT-4o-mini usando perfil + puntajes."""
     client = OpenAI(api_key=api_key)
 
     resumen = "\n".join(
@@ -214,38 +229,60 @@ def action_plan_openai(scores: list[float], api_key: str) -> str:
         for score, name in zip(scores, SHORT_NAMES)
     )
     global_score = sum(scores) / len(scores)
+    g_label, _ = get_maturity(global_score)
 
-    prompt = f"""Eres un consultor experto en transformación digital e inteligencia artificial.
+    # Construye el contexto de empresa solo con los campos que el usuario rellenó
+    ctx_lines = []
+    if profile.get("empresa") and profile["empresa"] != "Sin especificar":
+        ctx_lines.append(f"- Empresa: {profile['empresa']}")
+    if profile.get("sector") and profile["sector"] != "—":
+        ctx_lines.append(f"- Sector: {profile['sector']}")
+    if profile.get("empleados") and profile["empleados"] != "—":
+        ctx_lines.append(f"- Tamaño: {profile['empleados']} empleados")
+    if profile.get("facturacion") and profile["facturacion"] != "—":
+        ctx_lines.append(f"- Facturación anual: {profile['facturacion']}")
+    if profile.get("pais") and profile["pais"] != "—":
+        ctx_lines.append(f"- País: {profile['pais']}")
+    if profile.get("cargo") and profile["cargo"] != "—":
+        ctx_lines.append(f"- Evaluado por: {profile['cargo']}")
 
-Una organización ha completado una evaluación de madurez en IA con estos resultados:
+    company_context = "\n".join(ctx_lines) if ctx_lines else "No especificado"
 
+    prompt = f"""Eres un consultor senior experto en transformación digital e inteligencia artificial para empresas.
+
+## Contexto de la empresa evaluada
+{company_context}
+
+## Resultados de la evaluación de madurez en IA
 {resumen}
-Puntaje global: {global_score:.2f}/5.0
+Puntaje global: {global_score:.2f}/5.0 — Nivel: {g_label}
 
-Genera un Plan de Acción ejecutivo en español con las siguientes secciones:
-1. **Diagnóstico Ejecutivo** (2–3 oraciones sobre el estado actual)
-2. **Fortalezas a Capitalizar** (basadas en los puntajes más altos)
-3. **Áreas Críticas de Mejora** (los 2 pilares más débiles con acciones específicas)
-4. **Hoja de Ruta de 90 días** (5 acciones concretas y priorizadas)
-5. **KPIs de Seguimiento** (4 métricas para medir el progreso)
+## Instrucciones
+Genera un Plan de Acción ejecutivo en español, completamente personalizado para esta empresa concreta (su sector, tamaño y contexto). Incluye las siguientes secciones:
 
-Sé específico, accionable y usa lenguaje ejecutivo. Usa formato Markdown."""
+1. **Diagnóstico Ejecutivo** — 2–3 oraciones que describan la situación actual de esta empresa específica, mencionando su sector y tamaño si están disponibles.
+2. **Fortalezas a Capitalizar** — 2–3 puntos basados en los pilares con mayor puntaje, con recomendaciones concretas para este tipo de empresa.
+3. **Áreas Críticas de Mejora** — Los 2 pilares más débiles con acciones específicas y adaptadas al sector y tamaño de la organización.
+4. **Hoja de Ruta de 90 días** — 5 acciones concretas, priorizadas y realistas para el tamaño y recursos de esta empresa.
+5. **KPIs de Seguimiento** — 4 métricas medibles y relevantes para este sector.
+
+Usa lenguaje ejecutivo directo. No uses frases genéricas — cada punto debe reflejar el contexto de esta empresa. Formato Markdown."""
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=1200,
+        max_tokens=1400,
         temperature=0.7,
     )
     return response.choices[0].message.content
 
 
-def to_json(responses: dict, scores: list[float], company: str) -> str:
+def to_json(responses: dict, scores: list[float], profile: dict) -> str:
     """Serializa los resultados en formato JSON para descarga."""
     label, _ = get_maturity(sum(scores) / len(scores))
     data = {
         "metadata": {
-            "empresa": company or "Sin especificar",
+            **profile,
             "fecha_evaluacion": datetime.now().isoformat(),
             "herramienta": "AI Maturity Radar v1.0",
         },
@@ -271,43 +308,368 @@ def to_csv(scores: list[float]) -> str:
 
 # ── Aplicación principal ──────────────────────────────────────────────────────
 
-def main():
-    # CSS mínimo para mejorar la apariencia
-    st.markdown("""
-    <style>
-    .radar-header {
+def build_css(dark: bool) -> str:
+    if dark:
+        bg          = "#080c14"
+        sidebar_bg  = "linear-gradient(180deg,#0d1117 0%,#10151f 100%)"
+        sidebar_txt = "#94a3b8"
+        sidebar_hdr = "#e2e8f0"
+        hero_bg     = "linear-gradient(135deg,#0d1117 0%,#131929 60%,#0d1117 100%)"
+        hero_border = "rgba(78,205,196,0.18)"
+        hero_glow   = "rgba(78,205,196,0.12)"
+        hero_title  = "linear-gradient(135deg,#ffffff 30%,#4ECDC4 70%,#7C3AED 100%)"
+        hero_sub    = "#64748b"
+        card_bg     = "rgba(255,255,255,0.025)"
+        card_border = "rgba(78,205,196,0.14)"
+        desc_bg     = "linear-gradient(135deg,rgba(78,205,196,0.07),rgba(124,58,237,0.07))"
+        desc_txt    = "#94a3b8"
+        tab_bg      = "rgba(255,255,255,0.03)"
+        tab_txt     = "#64748b"
+        sec_txt     = "#f1f5f9"
+        body_txt    = "#e2e8f0"
+        input_bg    = "rgba(255,255,255,0.04)"
+        input_txt   = "#e2e8f0"
+        label_txt   = "#94a3b8"
+        prog_track  = "rgba(255,255,255,0.06)"
+        metric_bg   = "rgba(255,255,255,0.03)"
+        metric_val  = "#e2e8f0"
+        metric_lbl  = "#64748b"
+        btn_sec_bg  = "rgba(255,255,255,0.05)"
+        btn_sec_txt = "#94a3b8"
+        btn_sec_bdr = "rgba(255,255,255,0.1)"
+        hr_color    = "rgba(78,205,196,0.08)"
+        markdown_txt= "#cbd5e1"
+    else:
+        bg          = "#f0f4f8"
+        sidebar_bg  = "linear-gradient(180deg,#ffffff 0%,#f8fafc 100%)"
+        sidebar_txt = "#475569"
+        sidebar_hdr = "#0f172a"
+        hero_bg     = "linear-gradient(135deg,#ffffff 0%,#f0f9ff 60%,#ffffff 100%)"
+        hero_border = "rgba(14,165,233,0.25)"
+        hero_glow   = "rgba(14,165,233,0.08)"
+        hero_title  = "linear-gradient(135deg,#0f172a 20%,#0891b2 60%,#7C3AED 100%)"
+        hero_sub    = "#64748b"
+        card_bg     = "#ffffff"
+        card_border = "rgba(14,165,233,0.18)"
+        desc_bg     = "linear-gradient(135deg,rgba(14,165,233,0.07),rgba(124,58,237,0.07))"
+        desc_txt    = "#475569"
+        tab_bg      = "rgba(0,0,0,0.04)"
+        tab_txt     = "#64748b"
+        sec_txt     = "#0f172a"
+        body_txt    = "#1e293b"
+        input_bg    = "#f8fafc"
+        input_txt   = "#0f172a"
+        label_txt   = "#475569"
+        prog_track  = "rgba(0,0,0,0.08)"
+        metric_bg   = "#ffffff"
+        metric_val  = "#0f172a"
+        metric_lbl  = "#475569"
+        btn_sec_bg  = "rgba(0,0,0,0.04)"
+        btn_sec_txt = "#475569"
+        btn_sec_bdr = "rgba(0,0,0,0.1)"
+        hr_color    = "rgba(14,165,233,0.15)"
+        markdown_txt= "#334155"
+
+    accent = "#4ECDC4" if dark else "#0891b2"
+
+    return f"""
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    html, body, [data-testid="stAppViewContainer"] {{
+        font-family: 'Inter', sans-serif !important;
+        background: {bg} !important;
+        color: {body_txt} !important;
+    }}
+    [data-testid="stAppViewContainer"] > .main {{ background: transparent; }}
+    [data-testid="block-container"] {{ padding-top: 2rem; }}
+
+    /* General text */
+    p, span, div, li, td, th {{ color: {body_txt}; }}
+    h1, h2, h3, h4, h5, h6 {{ color: {sec_txt} !important; }}
+    .stMarkdown p, .stMarkdown li {{ color: {markdown_txt} !important; }}
+
+    /* Sidebar */
+    [data-testid="stSidebar"] {{
+        background: {sidebar_bg} !important;
+        border-right: 1px solid {hr_color} !important;
+    }}
+    [data-testid="stSidebar"] * {{ color: {sidebar_txt} !important; }}
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3 {{ color: {sidebar_hdr} !important; }}
+
+    /* Hero */
+    .hero-header {{
         text-align: center;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-        border-radius: 14px;
-        padding: 28px 20px;
+        background: {hero_bg};
+        border: 1px solid {hero_border};
+        border-radius: 24px;
+        padding: 52px 32px 44px;
+        margin-bottom: 36px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: {'0 0 60px rgba(78,205,196,0.06)' if dark else '0 4px 32px rgba(0,0,0,0.06)'};
+    }}
+    .hero-header::before {{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 70% 60% at 50% -10%, {hero_glow} 0%, transparent 70%);
+        pointer-events: none;
+    }}
+    .hero-title {{
+        font-size: 2.8rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        background: {hero_title};
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0 0 12px;
+    }}
+    .hero-sub {{
+        font-size: 1.05rem;
+        color: {hero_sub};
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+    }}
+    .hero-badge {{
+        display: inline-block;
+        margin-top: 20px;
+        background: linear-gradient(135deg,rgba(78,205,196,0.15),rgba(124,58,237,0.15));
+        border: 1px solid rgba(78,205,196,0.3);
+        border-radius: 50px;
+        padding: 5px 18px;
+        font-size: 0.78rem;
+        color: {accent};
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }}
+
+    /* Cards */
+    .glass-card {{
+        background: {card_bg};
+        border: 1px solid {card_border};
+        border-radius: 18px;
+        padding: 28px 28px 20px;
+        margin-bottom: 24px;
+        {'backdrop-filter: blur(12px);' if dark else 'box-shadow: 0 2px 16px rgba(0,0,0,0.06);'}
+    }}
+
+    /* Pillar desc */
+    .pillar-desc {{
+        background: {desc_bg};
+        border-left: 3px solid {accent};
+        border-radius: 0 12px 12px 0;
+        padding: 14px 20px;
         margin-bottom: 28px;
-    }
-    .pillar-desc {
-        background: rgba(255,255,255,0.04);
-        border-left: 4px solid #4ECDC4;
-        border-radius: 8px;
-        padding: 10px 16px;
-        margin-bottom: 18px;
-        color: #aaa;
-        font-size: 0.92rem;
-    }
-    </style>
+        color: {desc_txt};
+        font-size: 0.97rem;
+        font-style: italic;
+    }}
+
+    /* Tabs */
+    .stTabs [data-baseweb="tab-list"] {{
+        gap: 6px;
+        background: {tab_bg};
+        border-radius: 14px;
+        padding: 5px;
+        border: 1px solid {card_border};
+    }}
+    .stTabs [data-baseweb="tab"] {{
+        border-radius: 10px !important;
+        color: {tab_txt} !important;
+        font-weight: 500 !important;
+        font-size: 0.88rem !important;
+        padding: 8px 14px !important;
+        border: none !important;
+    }}
+    .stTabs [aria-selected="true"] {{
+        background: linear-gradient(135deg,rgba(78,205,196,0.2),rgba(124,58,237,0.2)) !important;
+        color: {accent} !important;
+        border: 1px solid rgba(78,205,196,0.3) !important;
+    }}
+    .stTabs [data-baseweb="tab-panel"] {{ padding-top: 20px; }}
+
+    /* Buttons */
+    .stButton > button[kind="primary"] {{
+        background: linear-gradient(135deg,#4ECDC4 0%,#7C3AED 100%) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 12px !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        padding: 14px 28px !important;
+        letter-spacing: 0.01em !important;
+    }}
+    .stButton > button[kind="primary"]:hover {{
+        opacity: 0.88 !important;
+        box-shadow: 0 8px 30px rgba(78,205,196,0.35) !important;
+    }}
+    .stButton > button:not([kind="primary"]) {{
+        background: {btn_sec_bg} !important;
+        color: {btn_sec_txt} !important;
+        border: 1px solid {btn_sec_bdr} !important;
+        border-radius: 10px !important;
+    }}
+
+    /* Inputs */
+    .stTextInput input, .stSelectbox > div > div {{
+        background: {input_bg} !important;
+        border: 1px solid {card_border} !important;
+        border-radius: 10px !important;
+        color: {input_txt} !important;
+    }}
+    .stTextInput input:focus {{
+        border-color: {accent} !important;
+        box-shadow: 0 0 0 3px rgba(78,205,196,0.12) !important;
+    }}
+    label[data-testid="stWidgetLabel"] p {{ color: {label_txt} !important; font-size: 0.85rem !important; }}
+
+    /* Progress */
+    .stProgress > div > div > div > div {{
+        background: linear-gradient(90deg,#4ECDC4,#7C3AED) !important;
+        border-radius: 99px !important;
+    }}
+    .stProgress > div > div {{
+        background: {prog_track} !important;
+        border-radius: 99px !important;
+        height: 6px !important;
+    }}
+
+    /* Metrics */
+    [data-testid="stMetric"] {{
+        background: {metric_bg} !important;
+        border: 1px solid {card_border} !important;
+        border-radius: 14px !important;
+        padding: 16px 20px !important;
+        {'box-shadow: 0 2px 8px rgba(0,0,0,0.06);' if not dark else ''}
+    }}
+    [data-testid="stMetricValue"] {{ color: {metric_val} !important; font-weight: 700 !important; }}
+    [data-testid="stMetricDelta"] {{ color: {accent} !important; }}
+    [data-testid="stMetricLabel"] p {{ color: {metric_lbl} !important; font-size: 0.82rem !important; }}
+
+    /* Alerts */
+    .stAlert {{
+        border-radius: 12px !important;
+        border: 1px solid {card_border} !important;
+    }}
+
+    /* Divider */
+    hr {{ border-color: {hr_color} !important; margin: 28px 0 !important; }}
+
+    /* Download buttons */
+    [data-testid="stDownloadButton"] button {{
+        background: {btn_sec_bg} !important;
+        color: {btn_sec_txt} !important;
+        border: 1px solid {card_border} !important;
+        border-radius: 10px !important;
+        font-weight: 500 !important;
+    }}
+
+    /* ── Segmented control (botones de respuesta) ── */
+    /* Contenedor */
+    html body div[data-testid="stSegmentedControl"] {{
+        gap: 4px !important;
+    }}
+    /* Todos los botones sin seleccionar — especificidad alta */
+    html body div[data-testid="stSegmentedControl"] button,
+    html body div[data-testid="stSegmentedControl"] button:not([aria-pressed="true"]) {{
+        background: {'rgba(255,255,255,0.09)' if dark else '#e8edf2'} !important;
+        color: {'#e2e8f0' if dark else '#1e293b'} !important;
+        border: 1px solid {'rgba(78,205,196,0.25)' if dark else 'rgba(0,0,0,0.15)'} !important;
+        border-radius: 8px !important;
+        font-size: 0.82rem !important;
+        font-weight: 500 !important;
+        padding: 7px 14px !important;
+        transition: background 0.15s, color 0.15s !important;
+    }}
+    /* Texto dentro de los botones */
+    html body div[data-testid="stSegmentedControl"] button p,
+    html body div[data-testid="stSegmentedControl"] button span,
+    html body div[data-testid="stSegmentedControl"] button div,
+    html body div[data-testid="stSegmentedControl"] button label {{
+        color: {'#e2e8f0' if dark else '#1e293b'} !important;
+        background: transparent !important;
+    }}
+    /* Hover */
+    html body div[data-testid="stSegmentedControl"] button:hover {{
+        background: {'rgba(78,205,196,0.18)' if dark else 'rgba(8,145,178,0.12)'} !important;
+        color: {accent} !important;
+        border-color: {accent} !important;
+    }}
+    html body div[data-testid="stSegmentedControl"] button:hover p,
+    html body div[data-testid="stSegmentedControl"] button:hover span {{
+        color: {accent} !important;
+    }}
+    /* Seleccionado — múltiples selectores para cubrir todos los casos de Streamlit */
+    html body div[data-testid="stSegmentedControl"] button[aria-pressed="true"],
+    html body div[data-testid="stSegmentedControl"] button[data-selected="true"],
+    html body div[data-testid="stSegmentedControl"] button[aria-checked="true"],
+    html body div[data-testid="stSegmentedControl"] button[tabindex="0"]:focus,
+    html body div[data-testid="stSegmentedControl"] button:active {{
+        background: linear-gradient(135deg,#4ECDC4,#7C3AED) !important;
+        color: #ffffff !important;
+        border-color: transparent !important;
+        font-weight: 600 !important;
+        box-shadow: 0 2px 14px rgba(78,205,196,0.4) !important;
+    }}
+    html body div[data-testid="stSegmentedControl"] button[aria-pressed="true"] p,
+    html body div[data-testid="stSegmentedControl"] button[aria-pressed="true"] span,
+    html body div[data-testid="stSegmentedControl"] button[aria-pressed="true"] div,
+    html body div[data-testid="stSegmentedControl"] button[data-selected="true"] p,
+    html body div[data-testid="stSegmentedControl"] button[data-selected="true"] span {{
+        color: #ffffff !important;
+        background: transparent !important;
+    }}
+
+    /* Hide Streamlit chrome */
+    #MainMenu, footer {{ visibility: hidden; }}
+    [data-testid="stToolbar"] {{ display: none; }}
+    """
+
+
+def section_title(icon: str, text: str, dark: bool = True):
+    txt_color = "#f1f5f9" if dark else "#0f172a"
+    line_color = "rgba(78,205,196,0.5)" if dark else "rgba(8,145,178,0.4)"
+    st.markdown(f"""
+    <div style="display:flex;align-items:center;gap:12px;margin:36px 0 18px;">
+        <span style="font-size:1.5rem;">{icon}</span>
+        <span style="font-size:1.25rem;font-weight:700;color:{txt_color};letter-spacing:-0.01em;">{text}</span>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,{line_color},transparent);margin-left:8px;"></div>
+    </div>
     """, unsafe_allow_html=True)
 
-    # Encabezado
+
+def main():
+    # ── Tema: debe leerse ANTES de renderizar cualquier widget ─────────────────
+    dark = st.session_state.get("dark_mode", True)
+
+    # Inyecta el CSS del tema actual
+    st.markdown(f"<style>{build_css(dark)}</style>", unsafe_allow_html=True)
+
+    # ── Hero Header ───────────────────────────────────────────────────────────
     st.markdown("""
-    <div class="radar-header">
-        <h1 style="color:white; font-size:2.4rem; margin:0;">🤖 AI Maturity Radar</h1>
-        <p style="color:#4ECDC4; font-size:1.05rem; margin:10px 0 0;">
-            Evalúa el nivel de madurez de tu organización en adopción de Inteligencia Artificial
-        </p>
+    <div class="hero-header">
+        <p class="hero-title">AI Maturity Radar</p>
+        <p class="hero-sub">Evalúa el nivel de madurez de tu organización en adopción de Inteligencia Artificial</p>
+        <span class="hero-badge">✦ Assessment Tool v1.0</span>
     </div>
     """, unsafe_allow_html=True)
 
     # ── Barra lateral ──────────────────────────────────────────────────────────
     with st.sidebar:
         st.title("⚙️ Configuración")
-        company = st.text_input("🏢 Nombre de la empresa", placeholder="Ej: MiEmpresa S.A.")
+
+        # Toggle de tema
+        st.toggle(
+            "🌙 Modo oscuro" if dark else "☀️ Modo claro",
+            value=dark,
+            key="dark_mode",
+            help="Cambia entre tema oscuro y claro",
+        )
 
         st.divider()
         st.subheader("🔑 OpenAI API Key (opcional)")
@@ -333,6 +695,55 @@ def main():
     if "show_results" not in st.session_state:
         st.session_state.show_results = False
 
+    # ── Perfil de la empresa ───────────────────────────────────────────────────
+    section_title("🏢", "Perfil de la Empresa", dark)
+    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
+
+    p_col1, p_col2, p_col3 = st.columns(3)
+    with p_col1:
+        company = st.text_input("Nombre de la empresa *", placeholder="Ej: MiEmpresa S.A.", key="p_company")
+        evaluator = st.text_input("Nombre del evaluador", placeholder="Ej: Ana García", key="p_evaluator")
+    with p_col2:
+        role = st.text_input("Cargo / Rol", placeholder="Ej: Chief Digital Officer", key="p_role")
+        email = st.text_input("Email de contacto", placeholder="ana@empresa.com", key="p_email")
+    with p_col3:
+        sector = st.selectbox("Sector / Industria", [
+            "— Selecciona —", "Retail / Consumo", "Servicios Financieros / Banca",
+            "Salud / Farmacéutico", "Manufactura / Industria", "Tecnología / Software",
+            "Logística / Transporte", "Educación", "Energía / Utilities",
+            "Telecomunicaciones", "Turismo / Hostelería", "Sector Público", "Otro",
+        ], key="p_sector")
+        country = st.selectbox("País", [
+            "— Selecciona —", "España", "México", "Colombia", "Argentina", "Chile",
+            "Perú", "Ecuador", "Estados Unidos", "Otro",
+        ], key="p_country")
+
+    p_col4, p_col5 = st.columns(2)
+    with p_col4:
+        employees = st.selectbox("Número de empleados", [
+            "— Selecciona —", "1–10", "11–50", "51–200", "201–500",
+            "501–1.000", "1.001–5.000", "Más de 5.000",
+        ], key="p_employees")
+    with p_col5:
+        revenue = st.selectbox("Facturación anual aproximada", [
+            "— Selecciona —", "Menos de 1M€", "1M€ – 10M€", "10M€ – 50M€",
+            "50M€ – 200M€", "200M€ – 1.000M€", "Más de 1.000M€", "Prefiero no indicar",
+        ], key="p_revenue")
+
+    st.markdown('</div>', unsafe_allow_html=True)  # cierra glass-card
+
+    # Recoge el perfil en un dict para usarlo en el export
+    company_profile = {
+        "empresa":      company or "Sin especificar",
+        "evaluador":    evaluator or "—",
+        "cargo":        role or "—",
+        "email":        email or "—",
+        "sector":       sector if sector != "— Selecciona —" else "—",
+        "pais":         country if country != "— Selecciona —" else "—",
+        "empleados":    employees if employees != "— Selecciona —" else "—",
+        "facturacion":  revenue if revenue != "— Selecciona —" else "—",
+    }
+
     # ── Instrucciones ──────────────────────────────────────────────────────────
     st.info(
         "📋 **Instrucciones**: Selecciona el nivel que mejor describe la realidad de tu organización. "
@@ -340,7 +751,7 @@ def main():
     )
 
     # ── Formulario por pestañas ────────────────────────────────────────────────
-    st.header("📝 Cuestionario de Evaluación")
+    section_title("📝", "Cuestionario de Evaluación", dark)
     tabs = st.tabs(PILLAR_KEYS)
 
     raw_responses: dict[str, list[int]] = {}
@@ -404,7 +815,8 @@ def main():
         weakest_idx   = scores.index(min(scores))
 
         st.divider()
-        st.header("📊 Resultados del Análisis")
+        empresa_display = company_profile["empresa"]
+        section_title("📊", f"Resultados — {empresa_display}", dark)
 
         # Métricas resumen
         c1, c2, c3 = st.columns(3)
@@ -431,12 +843,12 @@ def main():
 
         # Plan de acción
         st.divider()
-        st.header("🚀 Plan de Acción")
+        section_title("🚀", "Plan de Acción", dark)
 
         with st.spinner("Generando recomendaciones…"):
             if api_key and OPENAI_AVAILABLE:
                 try:
-                    plan = action_plan_openai(scores, api_key)
+                    plan = action_plan_openai(scores, api_key, company_profile)
                     st.success("✅ Plan generado con IA (OpenAI GPT-4o-mini)")
                 except Exception as exc:
                     st.warning(f"⚠️ Error con OpenAI ({exc}). Usando análisis automático.")
@@ -448,7 +860,7 @@ def main():
 
         # Exportar
         st.divider()
-        st.header("💾 Exportar Resultados")
+        section_title("💾", "Exportar Resultados", dark)
 
         responses_plain = {k: v for k, v in zip(SHORT_NAMES, [saved[pk] for pk in PILLAR_KEYS])}
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -457,7 +869,7 @@ def main():
         with dl1:
             st.download_button(
                 "📥 Descargar JSON",
-                data=to_json(responses_plain, scores, company),
+                data=to_json(responses_plain, scores, company_profile),
                 file_name=f"ai_maturity_{timestamp}.json",
                 mime="application/json",
                 use_container_width=True,
